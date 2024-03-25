@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sharts</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+        #indicator {
+            background-color: #222261;
+            width: 30px;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        #indicator > div {
+            background-color: #48e;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            transition: height .2s ease;
+        }
+        #game {
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(at 40px 40px, #222261, #60638c);
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="game"></canvas>
+    <div id="indicator"> <div></div> </div>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
